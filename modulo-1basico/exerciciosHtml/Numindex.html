@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de Number e Math</title>
+</head>
+<body>
+    <section>
+        <h1>O número é: <span id="num">0</span></h1>
+        <div id="texto"></div>
+    </section>
+    
+
+    <script>
+        const numero = Number (prompt('Digite um numero: '))
+        const idNum = document.getElementById('num')
+        const idTexto = document.getElementById('texto')
+
+        idNum.innerHTML = numero
+        idTexto.innerHTML += `Raiz quadrada: ${numero ** 0.5} <br>`
+
+        idTexto.innerHTML += `${numero} É inteiro?: ${Number.isInteger(numero)} <br>`
+
+        idTexto.innerHTML += `${numero} É Nan ?: ${Number.isNaN(numero)} <br>`
+
+        idTexto.innerHTML += `Arredondando para cima:  ${Math.ceil(numero)} <br>`
+
+        idTexto.innerHTML += `Arredondando para baixo:  ${Math.floor(numero)} <br>`
+
+        idTexto.innerHTML += `Casas decimas 2:  ${numero.toFixed(2)} <br>`
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Array Objeto e function</title>
+</head>
+<body>
+    <form action="" class="form">
+        <p>Nome: <input type="text" class="nome"></p>
+        <p>Sobre Nome: <input type="text" class="sobre"></p>
+        <p>Peso: <input type="text" class="peso"></p>
+        <p>Altura: <input type="text" class="altura"></p>
+        <button>Enviar</button>
+    </form>
+    <div class="res"></div>
+
+    <script>    
+        function MostarDados(){
+            const form = document.querySelector('.form')
+            const res = document.querySelector('.res')
+            const pessoas = []
+
+            function eventoForm(evento){
+                //preventDefault previni enviar os dados 
+                evento.preventDefault()
+                const nome = form.querySelector('.nome')
+                const sobre = form.querySelector('.sobre')
+                const peso = form.querySelector('.peso')
+                const altura = form.querySelector('.altura')
+
+                // passando uma objeto para um array
+                pessoas.push({
+                    nome:nome.value,
+                    sobreNome:sobre.value,
+                    peso:peso.value,
+                    altura:altura.value
+                })
+
+                console.log(pessoas)
+                res.innerHTML += `<p>${nome.value}</p>`
+            }
+
+            form.addEventListener('submit',eventoForm)
+        }
+        MostarDados()
+
+    </script>
+</body>
+</html>
