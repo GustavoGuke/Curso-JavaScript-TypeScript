@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","mappings":";;;;;AAAA,IAAMA,GAAG,GAAG,aAAZ;AACAC,OAAO,CAACC,GAAR,CAAYF,GAAZ,E","sources":["webpack://modelo-webpack/./src/index.js"],"sourcesContent":["const ola = 'hello mundo'\r\nconsole.log(ola)"],"names":["ola","console","log"],"sourceRoot":""}
