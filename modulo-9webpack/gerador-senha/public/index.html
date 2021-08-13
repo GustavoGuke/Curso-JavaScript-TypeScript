@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Gerador Senha</title>
+    
+</head>
+
+<body>
+
+    <section class="container">
+        <h1>Gerador de Senhas</h1>
+        <p>Senha: <span class="senha text-danger">Selecione as opções</span>
+        </p>
+        
+        <div class="d-flex flex-column">
+            <div>
+                <label for="">Quantidade de Caracteres</label>
+                <input class="quantidade" type="number" min="1" max="10" value="8" >
+            </div>
+            <div class="mt-4 mb-2">
+                <label for="">Adicionar Maiúsculas</label>
+                <input type="checkbox" class="chk-maiusculas">
+            </div>
+            <div class="mt-2 mb-2">
+                <label for="">Adicionar Minúsculas</label>
+                <input type="checkbox" class="chk-minusculas">
+            </div>
+            <div class="mt-2 mb-2">
+                <label for="">Adicionar Números</label>
+                <input type="checkbox" class="chk-numeros">
+            </div>
+            <div class="mt-2 mb-2">
+                <label >Adicionar Símbolos</label>
+                <input type="checkbox" class="chk-simbolos">
+            </div>
+
+            <button class="gerarSenha">Gerar senha</button>
+         
+        </div>
+
+    </section>
+
+    <script src="./assets/js/bundle.js"></script>
+</body>
+
+</html>
